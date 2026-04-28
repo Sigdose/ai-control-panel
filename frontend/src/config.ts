@@ -8,7 +8,7 @@
  * 노드 PC가 install 시 이 repo를 clone함.
  * 변경 후 frontend 재시작/리로드 필요 (vite hot-reload로 충분).
  */
-export const REPO_URL = 'https://github.com/YOUR_USERNAME/ai-control-panel.git'
+export const REPO_URL = 'https://github.com/Sigdose/ai-control-panel.git'
 
 /**
  * Repo branch (보통 main 또는 master).
