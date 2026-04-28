@@ -1,0 +1,25 @@
+# Node
+node_modules
+dist
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Server-generated
+cache/
+stt_settings.json
+settings.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

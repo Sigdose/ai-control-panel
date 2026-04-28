@@ -1,0 +1,15 @@
+# Web framework
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# faster-whisper + CTranslate2 (4.5.0+ for RTX 50 series Blackwell sm_120 support)
+faster-whisper>=1.1.0
+ctranslate2>=4.5.0
+
+# CUDA 12 runtime DLLs (Windows: 자동으로 venv site-packages에 배치됨,
+# stt_server.py가 시작 시점에 PATH/DLL 경로에 자동 추가)
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+
+# GPU VRAM 측정 (nvidia-smi 동등)
+nvidia-ml-py
