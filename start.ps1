@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 #  AI Control Panel — Start (단일 진입점)
 #  Launcher + Frontend dev 서버를 두 PowerShell 창으로 분리 실행
 #  브라우저 자동 오픈
@@ -33,13 +33,13 @@ if (-not (Test-Path "$FrontendDir\node_modules")) {
 Write-Host ""
 Write-Host "[1/2] Launcher (port 5000)..." -ForegroundColor Yellow
 $cmd1 = "Set-Location '$RootDir'; & '$VenvPython' launcher.py"
-Start-Process powershell -ArgumentList '-NoExit', '-Command', $cmd1
+Start-Process powershell -ArgumentList '-NoExit', '-NoProfile', '-Command', $cmd1
 
 Start-Sleep -Seconds 2
 
 Write-Host "[2/2] Frontend (port 5173) + 브라우저 오픈..." -ForegroundColor Yellow
 $cmd2 = "Set-Location '$FrontendDir'; npm run dev -- --open"
-Start-Process powershell -ArgumentList '-NoExit', '-Command', $cmd2
+Start-Process powershell -ArgumentList '-NoExit', '-NoProfile', '-Command', $cmd2
 
 Write-Host ""
 Write-Host "  두 개의 PowerShell 창이 열렸습니다." -ForegroundColor Green

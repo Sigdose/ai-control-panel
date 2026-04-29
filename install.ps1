@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 #  AI Control Panel — Initial Setup (run once after git clone)
 #  - Python/Node/Git 확인 (없으면 자동 설치)
 #  - venv-launcher 생성 + flask 설치
