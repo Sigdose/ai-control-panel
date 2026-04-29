@@ -1,6 +1,6 @@
 # Node
-node_modules
-dist
+node_modules/
+dist/
 *.local
 
 # Python
@@ -8,12 +8,15 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 venv/
+venv-*/
+venvs/
 .venv/
 
 # Server-generated
 cache/
 stt_settings.json
 settings.json
+*.log
 
 # IDE
 .vscode/
@@ -23,3 +26,7 @@ settings.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Env / secrets
+.env
+.env.local
