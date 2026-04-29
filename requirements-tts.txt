@@ -1,0 +1,10 @@
+flask>=3.0.0
+flask-cors>=4.0.0
+
+chatterbox-tts
+soundfile
+numpy
+num2words
+nvidia-ml-py
+
+# Note: torch와 torchaudio는 launcher가 PyTorch index URL로 별도 설치
